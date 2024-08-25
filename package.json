@@ -1,0 +1,31 @@
+{
+  "name": "yemen-aqaar",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.22",
+    "@vueuse/core": "^11.0.1",
+    "axios": "^1.7.5",
+    "jsvectormap": "^1.6.0",
+    "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3",
+    "pinia": "^2.2.2",
+    "tailwind-scrollbar": "^3.1.0",
+    "tailwindcss-primeui": "^0.3.4",
+    "vue": "^3.4.37",
+    "vue-router": "^4.4.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "vite": "^5.4.1"
+  }
+}

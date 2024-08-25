@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply relative z-1 bg-whiten text-base font-normal text-body dark:text-bodydark dark:bg-boxdark-2;
+        font-family: "Cairo", sans-serif;
+    }
+}
+
+@layer components {}
+
+@layer utilities {
+
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+  
+}
+
+/* third-party libraries CSS */
+
+
+.custom-input-date::-webkit-calendar-picker-indicator {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.custom-input-date-1::-webkit-calendar-picker-indicator {
+    background-image: url(../images/icon/icon-calendar.svg);
+}
+
+.custom-input-date-2::-webkit-calendar-picker-indicator {
+    background-image: url(../images/icon/icon-arrow-down.svg);
+}
+
+[x-cloak] {
+    display: none !important;
+}

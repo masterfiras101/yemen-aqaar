@@ -1,0 +1,11 @@
+[
+    {   
+        "user_id":1,
+        "user_name":"اسم المستخدم",
+        "user_email":"البريد الإلكتروني",
+        "user_phone":"الهاتف",
+        "user_type":"صلاحية المستخدم",
+        "user_image": "الصورة",
+        "user_actions":"الاحداث"
+    }
+]
