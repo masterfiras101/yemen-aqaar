@@ -31,7 +31,7 @@
 
      <div
               class="flex items-center justify-center lg:justify-center lg:w-50  mt-4 text-gray-600 transition-colors duration-300 transform border border-green-500 rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
-              <router-link to="/assets-dashboard" class=" px-4 gap-x-2 flex py-3 font-bold text-center">
+              <router-link to="#" class=" px-4 gap-x-2 flex py-3 font-bold text-center">
                   <user_service_text class="text-green-500">
                       خدمة العملاء
                     </user_service_text>
@@ -46,7 +46,7 @@
 
             <div class="flex flex-row justify-between lg:justify-center lg:gap-x-5 mt-2 items-center">
                 <div id="developers_services" class=" p-3 items-center justify-center lg:justify-center mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <router-link to="/assets-dashboard" class="block   font-bold -px-4">
+                    <router-link to="#" class="block   font-bold -px-4">
                         <img class="ml-3" style="width:40px;" src="@/assets/imgs/svg/ic_support.svg" alt="Account"/>
                            
                             <user_service_text class="text-title-services">
@@ -56,7 +56,7 @@
                     </router-link>
                 </div>
                 <div id="selling_rental_commission" class=" p-2 pt-3 pb-3 items-center justify-center lg:justify-center mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
-                      <router-link to="/assets-dashboard" class="block font-bold -px-7">
+                      <router-link to="#" class="block font-bold -px-7">
                           <img class="ml-5" style="width: 40px;" src="@/assets/imgs/svg/ic_support.svg" alt="Account"/>
                           
                           <user_service_text class="text-title-services">
@@ -83,7 +83,7 @@
    
                  <div
               class="flex bg-white  justify-end  lg:justify-center   text-gray-600 transition-colors duration-300 transform shadow-2 rounded-lg  dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
-              <router-link to="/assets-dashboard" class=" px-4 gap-x-2   flex py-3 font-bold">
+              <router-link to="#" class=" px-4 gap-x-2   flex py-3 font-bold">
                   <user_service_text class="">
                       إعلانات اليوم
                     </user_service_text>
@@ -94,7 +94,7 @@
             
                      <div
               class="flex bg-white justify-end  lg:justify-center text-gray-600 transition-colors duration-300 transform shadow-2 rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
-              <router-link to="/assets-dashboard" class=" px-4 gap-x-2 flex py-3 font-bold text-center">
+              <router-link to="#" class=" px-4 gap-x-2 flex py-3 font-bold text-center">
                   <user_service_text>
                       عقود الإيجار
                     </user_service_text>
@@ -104,7 +104,7 @@
 
                      <div
               class="flex bg-white lg:items-center justify-end lg:justify-center text-gray-600 transition-colors duration-300 transform shadow-2 rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
-              <router-link to="/assets-dashboard" class=" px-4 gap-x-2 flex py-3 font-bold text-center">
+              <router-link to="#" class=" px-4 gap-x-2 flex py-3 font-bold text-center">
                   <user_service_text>
                       طلبات البحث
                     </user_service_text>
@@ -123,7 +123,7 @@
    
                  <div
               class="flex justify-end bg-white lg:justify-center   text-gray-600 transition-colors duration-300 transform shadow-2  rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
-              <router-link to="/assets-dashboard" class=" px-4 gap-x-2 flex py-3 font-bold">
+              <router-link to="#" class=" px-4 gap-x-2 flex py-3 font-bold">
                   <user_service_text class="">
                       إعلانات اليوم
                     </user_service_text>
@@ -135,7 +135,7 @@
 
                      <div
               class="flex bg-white lg:items-center justify-end lg:justify-center text-gray-600 transition-colors duration-300 transform shadow-2  rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
-              <router-link to="/assets-dashboard" class=" px-4 gap-x-2 flex py-3 font-bold text-center">
+              <router-link to="#" class=" px-4 gap-x-2 flex py-3 font-bold text-center">
                   <user_service_text>
                       طلبات البحث
                     </user_service_text>

@@ -41,7 +41,6 @@
             months.</p>
         </div>
                     -->
-            
 
 
         </div>
@@ -279,9 +278,6 @@
     </section>
 </template>
 
-
-   
-
 <script setup>
 
 import axios from 'axios'
@@ -290,7 +286,6 @@ import { ref, onMounted } from 'vue';
 
 import users_data from '@/data/UsersData.json'
 const  users_data_table_headers = ref(users_data)
-
 
 const url = "http://192.168.0.162:8000";
 const users = ref([]);
@@ -309,7 +304,6 @@ try {
 onMounted(getUsers);
 
 </script>
-
 
 
 

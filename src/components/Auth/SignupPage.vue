@@ -5,10 +5,10 @@
 
 <template>
   <!-- Start Header Section With Login Form -->
-  <section id="signup_page" class="  dark:border-strokedark dark:bg-slate-900 ">
+  <section id="signup_page" class="h-screen  dark:border-strokedark dark:bg-slate-900 ">
 
 
-          <div class="mx-auto max-w-4xl mb-20 relative  isolate px-6  lg:px-14   sm:py-48 lg:py-20">
+          <div class="mx-auto max-w-5xl mb-20 relative  isolate px-6  lg:px-14   sm:py-48 lg:py-20">
 
         <div
           class="flex w-full max-w-sm justify-center  overflow-hidden rounded-lg  dark:bg-slate-900 lg:max-w-4xl">

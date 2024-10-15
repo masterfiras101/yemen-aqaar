@@ -1,51 +1,36 @@
-<script setup lang="ts">
-// @ts-ignore
-import jsVectorMap from 'jsvectormap'
-import '@/assets/js/us-aea-en'
-import { onMounted } from 'vue'
+<script setup>
+import "leaflet/dist/leaflet.css";
+import {LMap, LMarker, LTileLayer} from "@vue-leaflet/vue-leaflet"
+import {ref} from "vue";
 
-onMounted(() => {
-   jsVectorMap({
-    map: 'us_aea_en',
-    selector: '#mapOne',
-    zoomButtons: true,
+import arcades from "@/data/arcades.json"
 
-    regionStyle: {
-      initial: {
-        fill: '#C8D0D8'
-      },
-      hover: {
-        fillOpacity: 1,
-        fill: '#43B974'
-      }
-    },
-    regionLabelStyle: {
-      initial: {
-        fontFamily: 'Satoshi',
-        fontWeight: 'semibold',
-        fill: '#fff'
-      },
-      hover: {
-        cursor: 'pointer'
-      }
-    },
+let zoom = ref(6)
+let center = ref([38, 139.69])
 
-    labels: {
-      regions: {
-        render(code: any) {
-          return code.split('-')[1]
-        }
-      }
-    }
-  })
-})
+
 </script>
 
 <template>
-  <div
-    class="col-1 lg:col-span-12 rounded-sm border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-7"
-  >
-    <h4 class="mb-2 text-xl font-bold text-black dark:text-white">Yemen Aqaar</h4>
-    <div id="mapOne" class="mapOne map-btn !h-100"></div>
-  </div>
+  s
+  <main class="w-50">
+    <l-map v-model:zoom="zoom" v-model:center="center">
+      <l-tile-layer url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
+                    layer-type="base"
+                    name="Stadia Maps"
+                    attribution='&copy; 
+      <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+      >
+      </l-tile-layer>
+        <l-marker v-for="arcade in arcades.features.slice(0,10)" :lat-lng="arcade.geometry.coordinates.reverse()">
+      </l-marker>
+      <l-marker v-for="arcade in arcades.features.slice(0,10)" :lat-lng="arcade.geometry.coordinates.reverse()"></l-marker>
+
+    </l-map>
+  </main>
 </template>
+
+<style scoped >
+
+
+</style>

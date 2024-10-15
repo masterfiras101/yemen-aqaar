@@ -17,7 +17,7 @@ import DefaultHeader from '/src/components/Header/DefaultHeader.vue';
       
       <!-- ===== Main Content Start ===== -->
       <main>
-        <div  class="mx-auto max-w-screen-2xl p-6 md:p-5 2xl:p-10">
+        <div  class="mx-auto dark:bg-slate-500  min-h-screen max-w-screen-2xl p-6 md:p-5 2xl:p-10">
           <slot></slot>
         </div>
       </main>

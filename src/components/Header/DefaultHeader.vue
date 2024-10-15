@@ -7,6 +7,7 @@ import { useSidebarStore } from '@/stores/sidebar'
 const { toggleSidebar } = useSidebarStore()
 const sidebarStore = useSidebarStore()
 
+
 import DarkModeSwitcher from './DarkModeSwitcher.vue';
 
 
@@ -15,9 +16,7 @@ import DarkModeSwitcher from './DarkModeSwitcher.vue';
 </script>
 
 <template>
-  <header
-    class="fixed bottom-0  bg-white lg:top-0 lg:sticky   flex w-full "
-  >
+  <header class="fixed  bottom-0  z-99 bg-white dark:border-strokedark dark:bg-slate-900 lg:top-0 lg:sticky   flex w-full ">
     <div class="flex flex-grow items-center justify-between lg:justify-center lg:gap-x-10 py-4 px-4 shadow-2 md:px-6 2xl:px-11">
 
 
@@ -43,7 +42,7 @@ import DarkModeSwitcher from './DarkModeSwitcher.vue';
 
           <!-- <AssetsCustomDropdown/> -->
 <div class="">
-   <router-link class="" to="/services-page">
+   <router-link class="" to="/admin">
             <!--logo icon when responsive with phone-->
             <div class="block items-center justify-center ">
 
@@ -52,7 +51,7 @@ import DarkModeSwitcher from './DarkModeSwitcher.vue';
                        <img src="@/assets/imgs/svg/ic_services.svg" alt=""/>
    
                     </button>
-                    <account-text class="">الخدمات</account-text>
+                    <account-text class="text-sm">الإعدادات</account-text>
             </div>
             </router-link>
       </div>
@@ -68,7 +67,7 @@ import DarkModeSwitcher from './DarkModeSwitcher.vue';
                        <img src="@/assets/imgs/svg/ic_chats.svg" alt=""/>
    
                     </button>
-                    <account-text class="">المحادثات</account-text>
+                    <account-text class="text-sm">المحادثات</account-text>
             </div>
             </router-link>
       </div>
@@ -118,7 +117,10 @@ import DarkModeSwitcher from './DarkModeSwitcher.vue';
             </router-link>
       </div>
       
-
+      
+      <div class="hidden lg:flex lg:justify-end">
+        <DarkModeSwitcher/>
+      </div>
     </div>
   </header>
 </template>

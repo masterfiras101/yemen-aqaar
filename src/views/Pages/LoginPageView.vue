@@ -11,7 +11,7 @@
 <template>
     <DefaultLayout>
 
-        <div class="overflow-hidden">
+        <div class="overflow-hidden ">
             <LoginPage/>  
           </div>
     </DefaultLayout>

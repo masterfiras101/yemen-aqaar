@@ -10,11 +10,9 @@ import MapPage from '@/components/Map/MapPage.vue';
 
 
 <template>
-
     <DefaultLayout>
-        <div class="flex justify-center">
-            <SearchPage/>
-        </div>
         <MapPage/>
+        <div class="flex justify-center">
+        </div>
     </DefaultLayout>
 </template>

@@ -13,6 +13,11 @@ import RealEstateCreateView from '@/views/Pages/RealEstate/RealEstateCreateView.
 import UsersAdminView from '@/views/Pages/AdminPages/UsersAdminView.vue';
 import UsersAdminEditView from '@/views/Pages/AdminPages/Edit/UsersAdminEditView.vue';
 
+import DashboardMainView from '@/views/Pages/AdminPages/DashboardMainView.vue';
+import UsersIndexView from '@/views/Pages/AdminPages/Users/UsersIndexView.vue';
+
+
+
 const routes = [
   {
     path: "/",
@@ -21,6 +26,22 @@ const routes = [
     meta: {
       title: "Hellow Page",
     },
+  },
+  {
+  path: "/admin/",
+  component: DashboardMainView,
+  name:"admin",
+   meta: {
+      title: "Admin Page",
+    },
+  },
+  {
+    path:"/admin/users",
+    name:"admin_users",
+    component: UsersIndexView,
+        meta: {
+          title: "Users Page",
+        },
   },
   {
     path: "/signup",
