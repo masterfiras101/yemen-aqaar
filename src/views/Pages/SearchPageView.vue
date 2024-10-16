@@ -11,8 +11,8 @@ import MapPage from '@/components/Map/MapPage.vue';
 
 <template>
     <DefaultLayout>
-        <MapPage/>
-        <div class="flex justify-center">
+        <div class="flex h-screen w-full justify-center">
+            <MapPage/>
         </div>
     </DefaultLayout>
 </template>

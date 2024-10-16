@@ -15,14 +15,14 @@ import UsersAdminEditView from '@/views/Pages/AdminPages/Edit/UsersAdminEditView
 
 import DashboardMainView from '@/views/Pages/AdminPages/DashboardMainView.vue';
 import UsersIndexView from '@/views/Pages/AdminPages/Users/UsersIndexView.vue';
-
+import Erorre404 from '@/views/Pages/Erorre404.vue';
 
 
 const routes = [
   {
     path: "/",
     name: "index",
-    component: DefaultLayout,
+    component: LoginPageView,
     meta: {
       title: "Hellow Page",
     },
@@ -114,6 +114,14 @@ const routes = [
     component: UsersAdminEditView,
     meta: {
       title: "Users Admin Edit Page",
+    },
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'errorpage',
+    component: Erorre404,
+    meta: {
+      title: "404 Not foun Page",
     },
   },
 ];

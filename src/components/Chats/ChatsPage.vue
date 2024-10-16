@@ -4,10 +4,10 @@
 
 <template>
        <!-- component -->
-<div class="flex w-full justify-center antialiased text-black">
+<div class="flex w-full h-[75%] -mt-2 justify-center antialiased text-black">
     <div class="flex flex-row h-full  l overflow-x-hidden mb-12">
-            <div class="grid grid-cols-1  xl:grid-cols-1   ">
-                        <div class="flex  bg-white py-2 rounded-md">
+            <div class="grid grid-cols-1 bg-slate-900 rounded-xl  xl:grid-cols-1   ">
+                        <div class="flex justify-between  bg-white py-2 rounded-md">
                                 <div
                                 class="flex float-start items-center justify-center h-10 w-10 rounded-full bg-green-500 flex-shrink-0"
                                 >
@@ -19,7 +19,19 @@
                                 masterfiras101
                         
                                 </div>
+                                
+                            <router-link  to="/admin">
+                              <!--logo icon when responsive with phone-->
+                              <button
+                                    class=" text-bold text-black w-7 h-2" >
+                                    <img class="w-6 h-6" src="@/assets/imgs/svg/ic_arrow_right.svg" alt="arrow_right"/>
+                                  </button>
+                              </router-link>
                         </div>
+
+
+        
+    
         <div
           class="flex flex-col  flex-auto flex-shrink-0 rounded-2xl bg-gray-100 h-full"
         >
@@ -34,7 +46,7 @@
                       101
                     </div>
                     <div
-                      class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
+                      class="relative ml-3 text-sm animate-pulse bg-white py-2 px-4 shadow rounded-xl"
                     >
                       <div>Hey How are you today?</div>
                     </div>
@@ -43,12 +55,12 @@
                 <div class="col-start-1 col-end-8 p-3 rounded-lg">
                   <div class="flex flex-row items-center">
                     <div
-                      class="flex items-center text-white justify-center h-10 w-10 rounded-full bg-green-300 flex-shrink-0"
+                      class="flex items-center justify-center h-10 w-10 rounded-full bg-green-500 flex-shrink-0"
                     >
                       101
                     </div>
                     <div
-                      class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
+                      class="relative ml-3 text-sm bg-white animate-pulse py-2 px-6 shadow rounded-xl"
                     >
                       <div>
                         yemen aqaar web application 
@@ -64,7 +76,7 @@
                       101
                     </div>
                     <div
-                      class="relative mr-3 text-sm bg-green-100 py-2 px-4 shadow rounded-xl"
+                      class="relative mr-3 text-sm animate-pulse bg-green-100 py-2 px-4 shadow rounded-xl"
                     >
                       <div>I'm web developer </div>
                     </div>
@@ -79,7 +91,7 @@
                       101
                     </div>
                     <div
-                      class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
+                      class="relative ml-3 animate-pulse text-sm bg-white py-2 px-4 shadow rounded-xl"
                     >
                       <div>yemen aqaar !</div>
                     </div>
@@ -93,7 +105,7 @@
                       101
                     </div>
                     <div
-                      class="relative mr-3 text-sm bg-green-100 py-2 px-4 shadow rounded-xl"
+                      class="relative mr-3 animate-pulse text-sm bg-green-100 py-2 px-4 shadow rounded-xl"
                     >
                       <div>
                         welcome
@@ -111,10 +123,10 @@
                     <div
                       class="flex items-center justify-center h-10 w-10 rounded-full bg-green-500 flex-shrink-0"
                     >
-                      A
+                      101
                     </div>
                     <div
-                      class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
+                      class="relative ml-3  animate-pulse text-sm bg-white py-2 px-4 shadow rounded-xl"
                     >
                       <div>
                         hellow
@@ -200,7 +212,7 @@
             </div>
           </div>
         </div>
-      </div>
+            </div>
     </div>
   </div>
 </template>

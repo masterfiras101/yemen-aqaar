@@ -84,9 +84,13 @@
 
             <div
               class="flex items-center justify-center mt-4 text-gray-600 transition-colors duration-300 transform border border-green-500 hover:border-white rounded-lg dark:border-green-500 dark:text-green-200 hover:bg-green-500 hover:text-white dark:hover:bg-green-600">
-              <button class="w-5/6 px-4 py-3 font-bold text-center" type="submit">
-                دخول
-              </button>
+               <router-link to="/admin" >
+               
+                <button class="w-5/6 px-4 py-3 font-bold text-center" type="submit">
+                  دخول
+                </button>
+          
+              </router-link>
              
 
             </div>

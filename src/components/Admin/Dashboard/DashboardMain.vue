@@ -1,6 +1,15 @@
 
 <script setup>
 import DarkModeSwitcher from '@/components/Header/DarkModeSwitcher.vue';
+import { ref } from 'vue';
+import BottomSheetContent from '@/components/BottomSheet/BottomSheetContent.vue';
+import BottomSheetNotification from '@/components/BottomSheet/BottomSheetNotification.vue';
+const bottomSheetRef = ref(null);
+
+// Function to open the Bottom Sheet
+const openBottomSheet = () => {
+  bottomSheetRef.value.showBottomSheet = true; // Show Bottom Sheet
+};
 </script>
 
 <template>
@@ -18,7 +27,7 @@ import DarkModeSwitcher from '@/components/Header/DarkModeSwitcher.vue';
             <div class="flex items-center justify-center">
               <account-text class="">لوحة التحكم</account-text>
                 <button
-                       class="flex pl-3 pr-3" >
+                       class="flex pl-3 w-4 h-2 pr-3" >
                        <img  src="@/assets/imgs/svg/ic_arrow_right.svg" alt="arrow_right"/>
                     </button>
             </div>
@@ -174,13 +183,29 @@ import DarkModeSwitcher from '@/components/Header/DarkModeSwitcher.vue';
                       طلبات البحث
                     </user_service_text>
               </router-link>
-
             </div>   
+            
+                  <div
+              class="flex bg-white dark:border-strokedark dark:bg-slate-900 lg:items-center justify-end lg:justify-center text-gray-600 transition-colors duration-300 transform shadow-2  rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+            </div> 
+            <div class="bg-white dark:border-strokedark rounded-lg flex dark:bg-slate-900 lg:items-center justify-end lg:justify-center text-gray-600  dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+              <div class=" px-4 gap-x-2 flex py-3 font-bold text-center r"> 
+                <BottomSheetNotification/>
+                 
+              </div>
+            </div>
+            <div>
+            <!-- Trigger the Bottom Sheet from another button -->
+            <!-- <button @click="openBottomSheet" class="py-2 px-4  bg-blue-500 text-black rounded-lg hover:bg-blue-600">
+              افتح تقييم الموقع
+            </button> -->
+
+            <!-- Use the Bottom Sheet component -->
+          </div>
 
         </div>
     </div>
   </section>
-
 
 
   <!-- 

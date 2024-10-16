@@ -8,7 +8,7 @@
   <section id="signup_page" class="h-screen  dark:border-strokedark dark:bg-slate-900 ">
 
 
-          <div class="mx-auto max-w-5xl mb-20 relative  isolate px-6  lg:px-14   sm:py-48 lg:py-20">
+          <div class="mx-auto max-w-5xl mb-20 relative  isolate px-6  lg:px-14   sm:py-48 lg:py-10">
 
         <div
           class="flex w-full max-w-sm justify-center  overflow-hidden rounded-lg  dark:bg-slate-900 lg:max-w-4xl">
@@ -129,7 +129,7 @@
 
             <div
               class="flex items-center justify-center mt-4 text-gray-600 transition-colors duration-300 transform border border-green-500 hover:border-white rounded-lg dark:border-green-500 dark:text-green-200 hover:bg-green-500 hover:text-white dark:hover:bg-green-600">
-              <router-link to="" class="w-5/6 px-4 py-3 font-bold text-center">
+              <router-link to="/admin" class="w-5/6 px-4 py-3 font-bold text-center">
                 تسجيل
               </router-link>
 
